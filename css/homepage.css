@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+body {
+    background-color: rgb(39, 247, 112);
+}
+
+#games12 {
+    margin-top:7%;
+}
+#games12,#games34 {
+    display:flex;
+    justify-content: center;
+    
+    
+}
+#game1,#game2,#game3,#game4 {
+    width: 20%; 
+    display: inline; 
+    margin: 5%;   
+}
+#game1:hover,#game2:hover,#game3:hover,#game4:hover {
+   opacity: 80%;
+   width: 15%;   
+  }
+img {
+    width: 100%;
+    border:dashed 1px rgb(83, 83, 83);
+    border-radius: 10%;
+}
+img:hover {
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #4f8080be,
+                0 0 5px #6c9d89be,
+                0 0 100px #a3ae90be,
+                0 0 100px #f7f6f6be,
+                0 0 100px white;
+}
+
+.waviy { 
+  /* -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2)); */
+  font-size: 60px;
+  text-align: center;    
+}
+.waviy div {
+  font-family:monospace, cursive;
+  position: relative;
+  display: inline-block;
+  color: black;   
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i)); 
+}
+@keyframes waviy {  
+  20% {
+    transform: translateY(-20px);
+  }
+}

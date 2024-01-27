@@ -1,0 +1,137 @@
+body {
+    background-color: #e2e0e0;
+    z-index: 4;
+}
+
+#faces_board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1880px;    
+    
+}
+.faces {
+    width: 145px; 
+    height: 185px;
+    border:3px solid white;
+}
+#top_part {
+    display: grid;
+    grid-template-columns: 83% 13%;   
+}
+#top_part_right {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right:0%;
+   
+}
+
+#top_part_right> #bascket_div {
+    width: 90%;
+    margin-left: 18%;  
+}
+#top_part_right>#bascket_div>img {    
+    width: 70%;
+    height: 150px;
+}
+#top_part_right>a {
+    margin-top: 3%;
+}
+#top_part_left {
+   display: grid;
+   grid-template-columns: 12% 12% 30% 12% 12%;
+   row-gap: 5%;
+   column-gap: 5%;
+   
+}
+ #others_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: seagreen;
+    border-right:5px solid white;
+    border-left:5px solid white;
+}
+ #glasses_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: goldenrod;
+    border-right:5px solid white;
+    border-left:5px solid white;
+}
+ #eyes_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(207, 96, 118);
+    border-right:5px solid white;
+    border-left:5px solid white;
+}
+#mouthes_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(53, 165, 199);
+    border-right:5px solid white;
+    border-left:5px solid white;
+}
+#basic_face_container {
+    align-items: center;
+    z-index: -10;
+}
+#basic_face_container>img {
+    width: 400px;
+}
+#mouthes_div>img, #eyes_div>img, #glasses_div>img, #others_div>img  {
+    width: 115px;
+}
+#back_to_signing, #back_to_homepage, #new_game {
+    border-radius: 10px;
+    color:#000000;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor:pointer;
+    font-family: cooperlate, Franklin Gothic Medium, fantasy;
+    text-decoration: none;
+    background-color:rgb(53, 165, 199) ;
+    
+}
+#score_p, #points_p {
+    display: inline;
+    font-size: x-large;
+    color:#000000;
+    font-family: cooperlate, Franklin Gothic Medium;
+    text-align: center;
+    margin-left:3%;
+}
+#winning_message_div {
+    position:absolute;    
+   display: none;
+    justify-content: center;
+    align-items: center;   
+   z-index: 7;
+}
+#winning_message_1 {    
+    color:black;
+    font-size: 90px;
+    font-weight: 300;
+    font-family: 'Lucida Handwriting', cursive; 
+    text-align: center;   
+}
+#winning_message_2 {
+    color:black;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Copperplate', fantasy;
+    text-align: center;
+}
+

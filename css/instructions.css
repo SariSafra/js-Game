@@ -1,0 +1,40 @@
+p{
+    display: inline-block;
+    width:50%;
+    font-family: "Tahoma", sans-serif;
+    font: 700;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    font-size:x-large;
+}
+
+#logo{
+    width: 200px;
+    display:block;
+    border: black 2px solid;
+    margin-left: 8%;
+    color: white;
+    padding-left: 14px;
+    margin-left: 37%;
+    border: none;
+}
+#main{
+    border: black 2px solid;
+    border-radius: 8%;
+    background-color: white;
+    width:60%;
+    z-index: 4;
+}
+body{   
+    display: flex;
+    justify-content: center;   
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }

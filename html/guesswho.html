@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>are_you</title>
+    <link href="../css/guesswho.css" rel="stylesheet">
+    <link href="../css/firework.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="winning_message_div">
+        <p id="winning_message_1">Congratulations!!!</p>
+        <p id="winning_message_2">To play again press 'new game'</p>
+    </div>
+    <div id="top_part">
+        <div id="top_part_left">
+            <div id="mouthes_div">
+                <img src="../img/mouth/mouth1.png" class="mouth" id="mouth1"
+                    onclick="check_if_in_random_picture('mouth1', 'mouth','../img/mouth/mouth1.png')">
+                <img src="../img/mouth/mouth2.png" class="mouth" id="mouth2"
+                    onclick="check_if_in_random_picture('mouth2', 'mouth','../img/mouth/mouth2.png')">
+                <img src="../img/mouth/mouth3.png" class="mouth" id="mouth3"
+                    onclick="check_if_in_random_picture('mouth3', 'mouth','../img/mouth/mouth3.png')">
+                <img src="../img/mouth/mouth4.png" class="mouth" id="mouth4"
+                    onclick="check_if_in_random_picture('mouth4', 'mouth','../img/mouth/mouth4.png')">
+            </div>
+            <div id="eyes_div">
+                <img src="../img/eyes/eyes1.png" class="eyes" id="eyes1"
+                    onclick="check_if_in_random_picture('eyes1', 'eyes', '../img/eyes/eyes1.png')">
+                <img src="../img/eyes/eyes2.png" class="eyes" id="eyes2"
+                    onclick="check_if_in_random_picture('eyes2', 'eyes', '../img/eyes/eyes2.png')">
+                <img src="../img/eyes/eyes3.png" class="eyes" id="eyes3"
+                    onclick="check_if_in_random_picture('eyes3', 'eyes', '../img/eyes/eyes3.png')">
+                <img src="../img/eyes/eyes4.png" class="eyes" id="eyes4"
+                    onclick="check_if_in_random_picture('eyes4', 'eyes', '../img/eyes/eyes4.png')">
+            </div>
+            <div id="basic_face">
+                <div id="basic_face_container">
+                    <img id="basic_face_img" src="../img/basic_face.png">
+                </div>
+            </div>
+            <div id="glasses_div">
+                <img src="../img/glasses/glasses1.png" class="glasses" id="glasses1"
+                    onclick="check_if_in_random_picture('glasses1', 'glasses', '../img/glasses/glasses1.png')">
+                <img src="../img/glasses/glasses2.png" class="glasses" id="glasses2"
+                    onclick="check_if_in_random_picture('glasses2', 'glasses', '../img/glasses/glasses2.png')">
+                <img src="../img/glasses/glasses3.png" class="glasses" id="glasses3"
+                    onclick="check_if_in_random_picture('glasses3', 'glasses', '../img/glasses/glasses3.png')">
+                <img src="../img/glasses/glasses4.png" class="glasses" id="glasses4"
+                    onclick="check_if_in_random_picture('glasses4', 'glasses', '../img/glasses/glasses4.png')">
+            </div>
+            <div id="others_div">
+                <img src="../img/other/freckles.png" class="others" id="freckles"
+                    onclick="check_if_in_random_picture('freckles', 'others', '../img/other/freckles.png')">
+                <img src="../img/other/mask.png" class="others" id="mask"
+                    onclick="check_if_in_random_picture('mask', 'others', '../img/other/mask.png')">
+                <img src="../img/other/mustache.png" class="others" id="mustache"
+                    onclick="check_if_in_random_picture('mustache', 'others', '../img/other/mustache.png')">
+                <img src="../img/other/ribbon.png" class="others" id="ribbon"
+                    onclick="check_if_in_random_picture('ribbon', 'others', '../img/other/ribbon.png')">
+            </div>
+        </div>
+        <div id="top_part_right">
+            <a id="back_to_signing" href="../html/login.html">Change user</a>
+            <a id="back_to_homepage" href="../html/homepage.html">Switch game</a>
+            <a id="new_game" herf="../html/guesswho.html" onclick="reload_page()">New game</a>
+            <div id="bascket_div">
+                <p id="score_p">score:</p>
+                <p id="points_p"></p>
+                <img id="bascket" src="../img/bascket.png">
+
+            </div>
+        </div>
+    </div>
+    <div id="faces_board"></div>
+    
+
+</body>
+<script src="../js/firework.js"></script>
+<script src="../js/guesswho.js"></script>
+
+</html>
